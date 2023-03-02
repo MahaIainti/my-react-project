@@ -1,11 +1,25 @@
-import React from 'react'
+import React from 'react';
+import Header from './components/Header';
+import './styles/App.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>constelations</h1>
-      </header>
+      <Header/>
+      <main>
+        <nav>
+          Навигация
+        </nav>
+        <section>
+          <p>описание</p>
+        </section>
+        <section>
+          статья
+        </section>
+      </main>
+      <footer>
+        Подвал сайта
+      </footer>
     </div>
   );
 }
