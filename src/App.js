@@ -5,11 +5,9 @@ import './styles/App.css'
 function App() {
   return (
     <div className="App">
-      <Header/>
       <main>
-        <nav>
-          Навигация
-        </nav>
+        <Header/>
+        <Menu/>
         <section>
           <p>описание</p>
         </section>

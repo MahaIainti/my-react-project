@@ -111,7 +111,68 @@ article::before {
 aside::before {
   content: "aside";
 }
+nav {
+    position: fixed;
+    top: 0px; 
+    right: 5%;
+    z-index: 9999; 
+    background: #FFFFFF;
+}
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-nav::before {
-  content: "nav";
+.main-menu > li {
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.main-menu a {
+    font-family: Rockwell MT;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    margin-left: -1px;
+    padding: 8px 10px;
+    color: black;
+}
+
+.main-menu a:hover {
+    background: #f5f5f5;
+}
+
+.main-menu .sub-menu {
+    position: absolute;
+    left: -50px;
+    display: none;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #FFFFFF;
+    box-shadow: 0 0 5px 2px #f5f5f5;
+}
+
+.main-menu .sub-menu a {
+    font:normal normal normal 14px/1em  Akrobat-Regular;
+}
+
+.main-menu > li:hover  .sub-menu {
+    display: block;
+}
+.sub-menu::before, .sub-menu::after {
+    content: ''; 
+    position: absolute;
+    left: 141px; top: -20px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #f5f5f5;
+}
+.sub-menu::after {
+    border-bottom: 10px solid white;
+    top: -19px; 
 }
