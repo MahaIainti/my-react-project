@@ -3,24 +3,24 @@ import React from 'react';
 const Menu = function () {
 	return (
         <nav>
-        	<ul class="main-menu">
+        	<ul className="main-menu">
 	            <li>
-	                <a href="About the constellation.html">
+	                <a href="About the constelations.html">
 	                    О расстановках
 	                </a>
-	                <ul class="sub-menu">
+	                <ul className="sub-menu">
 	                    <li>
-	                        <a href="About the constellation.html">
+	                        <a href="About the constelations.html">
 	                            Что такое расстановки
 	                        </a>
 	                    </li>
 	                    <li>
-	                        <a href="About the constellation.html#2">
+	                        <a href="About the constelations.html#2">
 	                            С чем работают расстановки
 	                        </a>
 	                    </li>
 	                    <li>
-	                        <a href="About the constellation.html#3">
+	                        <a href="About the constelations.html#3">
 	                            Результаты и опасность
 	                        </a>
 	                    </li>
