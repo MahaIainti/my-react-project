@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SabMenu = ({menu})=> {
-	if (menu==1){
+	if (menu===1){
 		const snav = [
 		    {id: 1, name: 'Что такое расстановки', href: 'About the constelations.html'},
 		    {id: 2, name: 'С чем работают расстановки', href: 'About the constelations.html#2'},
