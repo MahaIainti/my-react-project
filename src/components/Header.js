@@ -2,16 +2,17 @@ import React from 'react';
 import Logo from '../images/logo.jpg';
 import Telegram from '../images/telegram.png';
 import Whatsapp from '../images/whatsapp.png';
+import { Link } from "react-router-dom";
 
 const Header = function () {
 	return (
 		<header className="App-header">
-			<a href="index.html">
-	        <img src={Logo} alt="logo" className="logo"/>
-	        <h1>
-	            Расстановочная лаборотория Светланы Казаковой
-	        </h1>
-	        </a>
+      		<Link to='/'>
+		        <img src={Logo} alt="logo" className="logo"/>
+		        <h1>
+		            Расстановочная лаборотория Светланы Казаковой
+		        </h1>
+	        </Link>
 	        <div className="contact">
 	            <img src={Telegram} alt="telegram" className="img"/>
 	            <img src={Whatsapp} alt="whatsapp" className="img"/>

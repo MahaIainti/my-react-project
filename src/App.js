@@ -1,8 +1,7 @@
 import React from 'react';
-import General from './pages/General';
-import WorkFormat from './pages/WorkFormat';
+import Menu from './components/Menu';
+import { Outlet } from "react-router-dom";
 import './styles/App.css';
-
 
 
     
@@ -10,8 +9,8 @@ import './styles/App.css';
 function App() {
   return (
     <div>
-      <General/>
-      <WorkFormat/>
+        <Menu/>
+        <Outlet/>
     </div>
   );
 }

@@ -1,17 +1,21 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Description from '../components/Description';
 
-const WorkFormat = function () {
+
+
+
+function AboutConstelations() {
   return (
     <div className="App">
       <main>
         <Header/>
-        <h1>WorkFormat</h1>
+        <Description/>
       </main>
       <Footer/>
     </div>
-  )
+  );
 }
 
-export default WorkFormat;
+export default AboutConstelations;
