@@ -1,119 +1,565 @@
 @font-face {
-  font-weight: 400;
-  font-family: "Montserrat";
-  font-style: normal;
+    font-family: Akrobat-Regular; 
+    src: url(../fonts/Akrobat-Regular.otf); 
 }
-
 @font-face {
-  font-weight: 700;
-  font-family: "Montserrat";
-  font-style: normal;
+    font-family: Rockwell MT; 
+    src: url(../fonts/Rockwell_MT.ttf); 
 }
-
+h1, h2, h3, h4 {
+    font-family: Rockwell MT; 
+}
+h3 {
+        text-transform: uppercase;
+}
+div, p, header, nav, section, footer {
+    display: block;
+}
+a {
+        text-decoration: none;
+}
+.Конь {
+    position: relative;
+    top: -35px;
+    left: 30px;
+    height: 90px;
+    float: left;
+ 
+}
+pre {
+    font-family: "Akrobat-Regular","Arial", sans-serif;
+}
+body {
+    min-width: 300px;
+    font-family: "Akrobat-Regular","Arial", sans-serif;
+    font-size: 22px;
+    line-height: 1.4;
+}
+header {
+    margin-top: 50px;
+    position: relative;
+    height: 50px;
+}
+header a {
+    text-decoration: none;
+    color: #000000;
+}
+.tab {
+    width: 100%;
+}
+h1 {
+    margin: 1% 0 1% 4%;
+    font-size: 28px;
+    float: left;
+}
+h1 span {
+    font:normal normal normal 25px/0.7em  аkrobat, sans-serif;
+    font-family: Akrobat-Regular; 
+}
+.contact{
+    margin: 1% 20px 1% 0px;
+    float: right;
+}
+.img {
+    margin-left: 5px;
+}
+.contact span {
+    margin: 0 5px;
+}
+.contact a {
+    text-decoration: none;
+    height: 20px;
+    width:  20px;
+    margin: 0 1px;
+}
+.contact img{
+    height: 28px;
+    width:  28px;
+    border-radius: 2px;
+}
 nav {
-  position: fixed;
-  top: 0px; 
-  right: 5%;
-  z-index: 9999; 
-  background: #FFFFFF;
+    position: fixed;
+    top: 0px; 
+    right: 5%;
+    z-index: 9999; 
+    background: #FFFFFF;
 }
 .main-menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .main-menu > li {
-  position: relative;
-  display: inline-block;
-  margin-right: -4px;
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
 }
 
 .main-menu a {
-  font-family: Rockwell MT;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 700;
-  display: block;
-  margin-left: -1px;
-  padding: 8px 10px;
-  color: black;
+    font-family: Rockwell MT;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    margin-left: -1px;
+    padding: 8px 10px;
+    color: black;
 }
 
 .main-menu a:hover {
-  background: #f5f5f5;
+    background: #f5f5f5;
 }
 
 .main-menu .sub-menu {
-  position: absolute;
-  left: -50px;
-  display: none;
-  width: 300px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background: #FFFFFF;
-  box-shadow: 0 0 5px 2px #f5f5f5;
+    position: absolute;
+    left: -50px;
+    display: none;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #FFFFFF;
+    box-shadow: 0 0 5px 2px #f5f5f5;
 }
 
 .main-menu .sub-menu a {
-  font:normal normal normal 14px/1em  Akrobat-Regular;
+    font:normal normal normal 14px/1em  Akrobat-Regular;
 }
 
 .main-menu > li:hover  .sub-menu {
-  display: block;
+    display: block;
 }
 .sub-menu::before, .sub-menu::after {
-  content: ''; 
-  position: absolute;
-  left: 141px; top: -20px;
-  border: 10px solid transparent;
-  border-bottom: 10px solid #f5f5f5;
+    content: ''; 
+    position: absolute;
+    left: 141px; top: -20px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #f5f5f5;
 }
 .sub-menu::after {
-  border-bottom: 10px solid white;
-  top: -19px; 
+    border-bottom: 10px solid white;
+    top: -19px; 
 }
-.logo {
-  height: 90px;
+section {
+    width: 80%;
+    margin: 110px 10% 40px 10%;
 }
-.contact img{
-  height: 28px;
-  width:  28px;
-  border-radius: 2px;
+.otzyv {
+    width: 65%;
+    text-align:center;
+    margin: 0 0% 40px 0%;
+}
+.s1 {
+    margin-bottom: 1px;
+    height: 380px;
+}
+.s1 p {
+    display: block;
+    width: 65%;
+    float: left;
+    margin-top: 20px;
+    margin: 0;
+}
+.s1 img {
+    width: 32%;
+    background:black;
+    float: right;
+    overflow: hidden;
+}
+.s1 img:before {
+  content: "";
+  padding-top: 100%;
+  float: left;
+}
+.s1 .io{
+    position: relative;
+}
+
+ .format a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 20%;
+    height:38px;
+    border-radius:10px;
+    background:#eee;
+    border:1px solid #ddd;
+    text-align:center;
+    box-shadow:0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+    margin: 0px auto;
+    padding-top: 5px;
+}
+.s2 {
+    margin-bottom: 100px;
+}
+.s2 p {
+    margin: 0;
+    display: block;
+    width: 100%;
+}
+.s2 .zapis {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+}
+.format1 {
+    margin-bottom: 10px;
+}
+.format1 a ,.format2 a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    left: 27%;
+    width: 20%;
+    height:38px;
+    border-radius:10px;
+    background:#eee;
+    border:1px solid #ddd;
+    text-align:center;
+    box-shadow:0 2px 4px rgba(0, 0, 0, 0.1);
+    color: black;
+    margin: 0px auto;
+    padding-top: 5px;
+}
+.s3 {
+    display: block;
+    margin-bottom: 30px;
+}
+.s3 a {
+    text-decoration: none;
+}
+.s3 span p {
+    display: block;
+    width: 65%;
+    margin: 20px 0 0 0;
+}
+.s3 img {
+    width: 32%;
+    background:black;
+    float: right;
+    overflow: hidden;
+}
+.s3 img:before {
+  content: "";
+  padding-top: 100%;
+  float: left;
+}
+.s3:last-child {
+    border-bottom: none;
+}
+.s4 {
+    margin: 0 0 100px 0;
+}
+.s4 p {
+    display: block;
+    width: 65%;
+    margin: 20px 0 0 357px;
+}
+.s4 img {
+    width: 28%;
+    float: left;
+    overflow: hidden;
+}
+.s4 ul {
+    display: block;
+    list-style: none;
+    margin: 20px 0 130px 0;
+}
+.s4 li {
+    width: 24%;
+    float: left;
+    margin: 0 0 0 9%;
+}
+.zap {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+}
+.spisok {
+    display: block;
+    width: 65%;
+    padding: 0; 
+    list-style: none;
+}
+.razdelitel {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.preimuchistva {
+    display: block;
+    padding: 0;
+    border: none;
+}
+.preimuchistva li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    width: 30%;
+    vertical-align: top;
+    line-height: 1.2;
+    margin: 0 3% 50px 0;
+    text-align: center;
+}
+.preimuchistva li:last-child {
+    margin-right: 0;
+}
+.preimuchistva p {
+    text-align: justify;
+}
+.preimuchistva img {
+    width: 120px;
+    height: 120px;
+}
+.news {
+    position: relative;
+}
+.news p {
+    display: block;
+    position: relative;
+    width: 100%;
 }
 footer {
-  border-top: 1px solid; 
-  height: 80px;
-  padding-top: 30px;
+    border-top: 1px solid; 
+    height: 80px;
+    padding-top: 30px;
 }
 footer span {
-  display: block;
-  float: left;
-  font-size: 18px;
-  margin-left: 50px;
+    display: block;
+    float: left;
+    font-size: 18px;
+    margin-left: 50px;
 }
-.cont2 {
-  display: block;
-  width: 40%;
-  margin: 7px 0 0 5px;
-  float: right;
+.cont2{
+    display: block;
+    margin: 7px 0 0 45px;
+    float: right;
 }
 .cont2 span {
-  display: block;
-  margin: 0 10px;
+    margin: 0 20px;
 }
 .cont2 a {
-  text-decoration: none;
-  height: 28px;
-  width:  28px;
-  margin: 0 2px;
+    text-decoration: none;
+    height: 28px;
+    width:  28px;
+    margin: 0 2px;
 }
 .cont2 img{
-  float: left;
-  height: 20px;
-  width:  20px;
-  border-radius: 2px;
-  margin-right: 5px;
+    float: left;
+    height: 20px;
+    width:  20px;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+.vverh {
+    position: fixed; 
+    width: 44px;
+    height: 44px;
+    bottom: 30px;
+    right: 60px;
+    display: block;
+    z-index: 9999; 
+    opacity: 0.8;
+}
+@media screen and (max-width: 1340px){
+    body { font-size: 1.5em; }
+    h1 { font-size: 1em; margin: 0 0 0 50px; max-width: 600px; }
+    .contact { font-size: 0.9em; margin-top: 10px; max-width: 250px;}
+    .contact img{height: 20px; width:  20px; }
+    .s1 {  height: 360px;}
+}
+@media  (max-width: 1020px){
+    body { font-size: 1em; }
+    h1 { font-size: 2em; }
+    .contact { font-size: 1.5em;     margin: 10px 15px 0 0px; max-width: 500px;}
+    .contact img{height: 20px; width:  20px;}
+    .cont2 { float: left; }
+    .s1 {  height: 340px;}
+    .main-menu a { font-size: 1.15em;}
+    .format a,.format1 a,.format2 a  { font-size: 1.4em; padding-top: 0px; height: 30px; width: 25%;}
+    .preimuchistva {margin-bottom: 50px; font-size: 1em;}
+}
+@media (max-width: 800px){
+    body { font-size: 1em; }
+    h1 { font-size: 1.5em; margin: 0 0 0 50px; max-width: 300px;}
+    .Конь { top: 0px; }
+    .contact { font-size: 1.3em; margin-top: 2%;}
+    .contact span { margin: 0px 10px 0 5px; }
+    .contact img{height: 15px; width:  15px;}
+    .cont2 { float: left; margin-bottom: 15px;}
+    .main-menu a { font-size: 1em;}
+    .s2 {margin-bottom: 50px;}
+    .format a,.format1 a { font-size: 16px; padding-top: 10px; height: 30px; width: 25%; margin-bottom: 30px;}
+    .format1 a {margin-top: 50px;}
+    .format2 a { font-size: 12px; padding-top: 8px; height: 30px; width: 25%;}
+    .preimuchistva {margin-bottom: 50px; font-size: 1.4em;}
+    .preimuchistva li,.preimuchistva li:last-child { display: block; width: 70%; margin: auto;}
+}
+@media screen and (device-width: 731px) {
+    body { font-size: 1em; }
+    h1 { font-size: 1.1em; margin: 0 0 0 50px; max-width: 280px;}
+    .Конь { top: 0px; }
+    .contact { font-size: 1.3em; margin-top: 2%;}
+    .contact span { margin: 0px 10px 0 5px; }
+    .contact img{height: 15px; width:  15px;}
+    .main-menu a { font-size: 0.7em;}
+    .format a,.format1 a { font-size: 12px; padding-top: 15px; height: 30px; width: 25%;}
+    .format2 a { font-size: 12px; padding-top: 8px; height: 30px; width: 25%;}
+    .preimuchistva {margin-bottom: 50px;font-size: 1em;}
+    .preimuchistva li,.preimuchistva li:last-child { display: block; width: 70%; margin: auto;}
+}
+
+
+
+
+
+@media screen and (max-width: 760px) and (min-width: 651px){
+    body { font-size: 17px; }
+    h1 { font-size: 22px; margin: 0 0 0 5%;}
+    .contact { font-size: 20px; margin-top: 2%;}
+    .contact span { margin: 0px 15px 0 5px; }
+    .contact img{height: 17px; width:  17px;}
+    .main-menu a { font-size: 14px;}
+    .format a, .format1 a { font-size: 14px; padding-top: 12px;}
+    .format2 a { font-size: 16px; padding-top: 5px;}
+    .preimuchistva {margin-bottom: 50px; font-size: 17px;}
+    .preimuchistva li,.preimuchistva li:last-child { display: block; width: 70%; margin: auto;}
+    .preimuchistva img { width: 80px; height: 80px; }
+
+}
+@media screen and (max-width: 650px) and (min-width: 601px){
+    body { font-size: 16px; }
+    h1 { font-size: 23px; margin: 0 0 0 7%; max-width: 470px;}
+    .contact { font-size: 18px; margin-top: 2%;}
+    .contact span { margin: 0px 15px 0 5px; }
+    .contact img{height: 15px; width:  15px;}
+    .main-menu a { font-size: 12px;}
+    .format a, .format1 a { font-size: 14px; padding-top: 13px;}
+    .format2 a { font-size: 16px; padding-top: 5px;}
+    .preimuchistva {margin-bottom: 50px; font-size: 16px;}
+    .preimuchistva li,.preimuchistva li:last-child { display: block; width: 70%; margin: auto;}
+}
+@media screen and (max-width: 600px) and (min-width: 551px){
+    body { font-size: 15px; }
+    h1 { font-size: 20px; margin: 0 0 0 50px; max-width: 400px;}
+    .contact { font-size: 17px; margin-top: 2%;}
+    .contact span { margin: 0px 15px 0 5px; }
+    .contact img{height: 15px; width:  15px;}
+    .main-menu a { font-size: 11px;}
+    .format a,.format1 a { font-size: 14px; padding-top: 5px;}
+    .format2 a { font-size: 14px; padding-top: 10px;}
+    .preimuchistva {margin-bottom: 50px; font-size: 15px;}
+    .preimuchistva li,.preimuchistva li:last-child { display: block; width: 70%; margin: auto;}
+}
+@media screen and (max-width: 550px) and (min-width: 501px){
+    body { font-size: 15px; }
+    h1 { font-size: 20px; margin: 0 0 0 50px; max-width: 370px;}
+    .contact { font-size: 17px; margin-top: 2%;}
+    .contact span { margin: 0px 15px 0 5px; }
+    .contact img{height: 15px; width:  15px;}
+    .main-menu a { font-size: 10px;}
+    .format a,.format1 a { font-size: 14px; padding-top: 5px;}
+    .format2 a { font-size: 14px; padding-top: 13px;}
+    .preimuchistva {margin-bottom: 50px; font-size: 15px;}
+    .preimuchistva li,.preimuchistva li:last-child { display: block; width: 70%; margin: auto;}
+}
+@media screen and (max-width: 500px) and (min-width: 481px){
+    body { font-size: 15px; }
+    h1 { font-size: 23px; margin: 0 0 0 50px; max-width: 350px;}
+    .Конь { top: 0px; }
+    .contact { font-size: 16px; margin-top: 2%;}
+    .contact span { margin: 0px 15px 0 5px; }
+    .contact img{height: 15px; width:  15px; }
+    .main-menu a { font-size: 11px;}
+    .format a,.format1 a { font-size: 14px; padding-top: 5px;}
+    .format2 a { font-size: 14px; padding-top: 10px; height: 30px;}
+    .preimuchistva {margin-bottom: 50px; font-size: 15px;}
+    .preimuchistva li,.preimuchistva li:last-child { display: block; width: 70%; margin: auto;}
+}
+@media screen and (max-width: 480px) and (min-width: 401px){
+    body { font-size: 15px; }
+    h1 { font-size: 20px; margin: 0 0 0 50px; max-width: 260px;}
+    .Конь { top: 0px; }
+    .contact { font-size: 16px; margin-top: 2%; max-width: 250px}
+    .contact span { margin: 0px 10px 0 5px; }
+    .contact img{height: 15px; width:  15px;}
+    .main-menu a { font-size: 8px;}
+    .format a,.format1 a { font-size: 12px; padding-top: 10px; height: 30px; width: 25%;}
+    .format2 a { font-size: 12px; padding-top: 9px; height: 30px; width: 25%;}
+    .preimuchistva {margin-bottom: 50px; font-size: 15px;}
+    .preimuchistva li,.preimuchistva li:last-child { display: block; width: 70%; margin: auto;}
+    .preimuchistva img { width:50px; height: 50px; }
+}
+@media screen and (max-width: 400px) and (min-width: 321px){
+    body { font-size: 15px; }
+    h1 { font-size: 20px; margin: 0 0 0 50px; max-width: 240px;}
+    .Конь { top: 0px; }
+    .contact { font-size: 16px; margin: 2% 0 15px 25px; max-width: 270px}
+    .contact span { margin: 0px 10px 0 5px; }
+    .contact img{height: 15px; width:  15px;}
+    .main-menu a { font-size: 8px;}
+    .format a,.format1 a { font-size: 12px; padding-top: 1px; height: 35px; width: 25%;}
+    .format2 a { font-size: 12px; padding-top: 9px; height: 30px; width: 25%;}
+    .preimuchistva {margin-bottom: 50px; font-size: 15px;}
+    .preimuchistva li,.preimuchistva li:last-child { display: block; width: 70%; margin: auto;}
+    .preimuchistva img { width: 50px; height: 50px; }
+}
+@media screen and (max-width: 320px) and (min-width: 241px){
+    body { font-size: 14px; }
+    h1 { font-size: 23px; margin: 0 0 0 50px; max-width: 200px;}
+    .Конь { top: 0px; }
+    .contact { font-size: 16px; margin: 2% 0 15px 25px;}
+    .contact span { margin: 0px 15px 0 5px; }
+    .contact img{height: 15px; width:  15px;}
+    .main-menu a { font-size: 7px;}
+    .format a,.format1 a { font-size: 12px; padding-top: 1px; height: 35px; width: 25%; margin-bottom: 30px;}
+    .format2 a { font-size: 12px; padding-top: 0px; height: 33px; width: 25%;}
+    .preimuchistva {margin-bottom: 50px; font-size: 14px;}
+    .preimuchistva li,.preimuchistva li:last-child { display: block; width: 80%; margin: auto;}
+    .preimuchistva img { width: 50px; height: 50px; }
+}
+@media screen and (max-width: 240px) and (min-width: 177px){
+    body { font-size: 14px; }
+    h1 { font-size: 20px; margin: 0 0 0 50px; max-width: 150px;}
+    .Конь { top: 0px; }
+    .contact { font-size: 16px; margin: 2% 0 15px 25px;}
+    .contact span { margin: 0px 15px 0 5px; }
+    .contact img{height: 15px; width:  15px;}
+    .main-menu a { font-size: 6px;}
+    .format a,.format1 a { font-size: 11px; padding-top: 1px; height: 33px; width: 25%;}
+    .format2 a { font-size: 11px; padding-top: 8px; height: 25px; width: 25%;}
+    .preimuchistva {margin-bottom: 40px; font-size: 14px;}
+    .preimuchistva li,.preimuchistva li:last-child { display: block; width: 80%; margin: auto;}
+    .preimuchistva img { width: 50px; height: 50px; }
+}
+@media screen and (max-width: 176px) and (min-width: 129px){
+    body { font-size: 13px; }
+   h1 { font-size: 19px; margin: 0 0 0 50px; max-width: 150px;}
+    .Конь { top: 0px; }
+    .contact { font-size: 16px; margin: 2% 0 15px 25px;}
+    .contact span { margin: 0px 15px 0 5px; }
+    .contact img{height: 15px; width:  15px;}
+    .main-menu a { font-size: 5px;}
+    .format a,.format1 a { font-size: 11px; padding-top: 1px; height: 33px; width: 25%;}
+    .format2 a { font-size: 11px; padding-top: 0px; height: 33px; width: 25%;}
+    .preimuchistva {margin-bottom: 40px; font-size: 15px;}
+    .preimuchistva li,.preimuchistva li:last-child { display: block; width: 80%; margin: auto;}
+    .preimuchistva img { width: 50px; height: 50px; }
+}
+@media screen and (max-width: 128px){
+    body { font-size: 12px; }
+    h1 { font-size: 23px; margin: 0 0 0 50px; max-width: 350px;}
+    .Конь { top: 0px; }
+    .contact { font-size: 16px; margin-top: 2%;}
+    .contact span { margin: 0px 15px 0 5px; }
+    .contact img{height: 15px; width:  15px;}
+    .main-menu a { font-size: 16px;}
+    .format a,.format1 a { font-size: 10px; padding-top: 15px; height: 30px; width: 25%;}
+    .format2 a { font-size: 10px; padding-top: 8px; height: 30px; width: 25%;}
+    .preimuchistva {margin-bottom: 40px; font-size: 13px;}
+    .preimuchistva li,.preimuchistva li:last-child { display: block; width: 80%; margin: auto;}
+    .preimuchistva img { width: 50px; height: 50px; }
 }

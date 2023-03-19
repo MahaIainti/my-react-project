@@ -8,7 +8,6 @@ const Header = function () {
 	return (
 		<header className="App-header">
       		<Link to='/'>
-		        <img src={Logo} alt="logo" className="logo"/>
 		        <h1>
 		            Расстановочная лаборотория Светланы Казаковой
 		        </h1>

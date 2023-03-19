@@ -4,7 +4,7 @@ const Description = function () {
 	return (
 		<div>
 			<section className="s3">
-		      <a href="#" name="1"></a>
+		      <a href="#" name="What-are-constelations"></a>
 		      <h3>
 		        Что такое расстановки
 		      </h3>
@@ -32,7 +32,7 @@ const Description = function () {
 		    </section>
 		    <img src="images/razdelitel.jpg" className="razdelitel"/>
 		    <section className="s3">
-		      <a href="#" name="2"></a>
+		      <a href="#" name="What-do-constelations-work-with"></a>
 		      <h3>
 		        С чем работают расстановки 
 		      </h3>
@@ -52,7 +52,7 @@ const Description = function () {
 		    <div></div>
 		    <img src="images/razdelitel.jpg" className="razdelitel" alt="logo"/>
 		    <section className="s3">
-		      <a href="#" name="3"></a>
+		      <a href="#" name="Results-and-danger"></a>
 		      <h3>
 		        Результаты и опасность 
 		      </h3>
